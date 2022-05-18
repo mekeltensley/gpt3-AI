@@ -7,30 +7,48 @@ class Home extends Component {
       <div>
         <Container>
           <br />
-          <h1>Leaving reviews just got easier</h1>
+          <h1>Leaving Restaurant Reviews Just Got Easier</h1>
           <h3>
-            Want to leave a review but you don't know what to say Review Buddy
-            is here to help
+            Want to leave a review but you don't know what to say.
+            <br /> Review Buddy is here to help
           </h3>
           <br />
-          <>
+          <Form onSubmit={this.onFormSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Disabled input</Form.Label>
-              <Form.Control placeholder="Disabled input" disabled />
+              <Form.Label>
+                Share the name of the restaurant and your throughts on your
+                experience
+              </Form.Label>
             </Form.Group>
+            <br />
+            <Form.Control
+              type="password"
+              id="inputPassword5"
+              aria-describedby="passwordHelpBlock"
+            />
             <Form.Group className="mb-3">
-              <Form.Label>Disabled select menu</Form.Label>
-              <Form.Select disabled>
-                <option>Disabled select</option>
+              <br />
+              <Form.Label>Select Review Engine</Form.Label> <br />
+              <br />
+              <Form.Select size="lg">
+                <option>Choose an Engine</option>
+                <option>Engine #1</option>
+                <option>Engine #2</option>
+                <option>Engine #3</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Check type="checkbox" label="Can't check this" disabled />
-            </Form.Group>
-          </>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+            <br />
+            <br />
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+          <br />
+          <Form.Group className="personalized-review">
+            <Form.Label>Your personalized review from the AI engine</Form.Label> <br />
+            <br />
+            <Form.Control disabled />
+          </Form.Group>
         </Container>
       </div>
     );
