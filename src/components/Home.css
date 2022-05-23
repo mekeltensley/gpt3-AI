@@ -1,0 +1,44 @@
+body {
+    background-color: #CAD593;
+}
+
+h1 {
+    color: #8e7dbe;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+h5 {
+    color: #7161ef;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-label {
+    color: #31572c;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-select {
+    color: #31572c;
+    text-align: center;
+    width: 200px;
+    margin-left: 42%;
+    margin-bottom: 55px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+    color: #7161ef;
+    font-family: 'Raleway', sans-serif;
+    width: 400px;
+    margin-left: 35%;
+    overflow-wrap: break-word;
+}
+
+.card-body {
+    background-color: #fffcf2;
+    font-family: 'Raleway', sans-serif;
+}
+
